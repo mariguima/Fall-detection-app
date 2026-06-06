@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "841357399646",
+    "project_id": "fall-detection-project-6cc1b",
+    "storage_bucket": "fall-detection-project-6cc1b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841357399646:android:cba30ee55fb2fc515a06cf",
+        "android_client_info": {
+          "package_name": "com.example.fall_detection_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2EDsrT4OigPWx3y14dbj3VtgVWzrmyeI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841357399646:android:e7409f29ab17407e5a06cf",
+        "android_client_info": {
+          "package_name": "com.fall_detection_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2EDsrT4OigPWx3y14dbj3VtgVWzrmyeI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
