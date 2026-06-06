@@ -30,25 +30,34 @@ class OnboardingFragment : Fragment() {
         val adapter = OnboardingAdapter(this)
         binding.viewPager.adapter = adapter
 
-        // update dots when page changes
+        // update dots and resize card when page changes
         binding.viewPager.registerOnPageChangeCallback(object :
             ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
                 updateDots(position)
+
+                // resize ViewPager2 to match current slide height
+                val slideView = binding.viewPager
+                    .findViewWithTag<View>("slide_$position")
+                slideView?.post {
+                    val layoutParams = binding.viewPager.layoutParams
+                    layoutParams.height = slideView.measuredHeight
+                    binding.viewPager.layoutParams = layoutParams
+                }
             }
         })
 
         // start on first slide with dot 1 active
         updateDots(0)
 
-        // next button behaviour
+        // next / get started button behaviour
         binding.btnNext.setOnClickListener {
             val current = binding.viewPager.currentItem
             if (current < 2) {
                 // go to next slide
                 binding.viewPager.currentItem = current + 1
             } else {
-                // last slide — navigate to permissions screen
+                // last slide — navigate to permissions
                 findNavController().navigate(R.id.action_onboarding_to_permissions)
             }
         }
@@ -62,10 +71,13 @@ class OnboardingFragment : Fragment() {
                 else R.drawable.dot_inactive
             )
         }
+
+        // change button text based on slide
+        binding.btnNext.text = if (position == 0) "Get started" else if (position == 2) "Next" else "Next"
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
-        _binding = null  // avoid memory leaks
+        _binding = null
     }
 }
