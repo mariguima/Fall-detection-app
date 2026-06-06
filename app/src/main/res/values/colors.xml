@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bgTop">#A3C9A8</color>
+    <color name="bgMid">#84B59F</color>
+    <color name="bgBottom">#69A297</color>
+
+    <color name="background_green">#8AAF9A</color>
+    <color name="card_cream">#EFE9BE</color>
+    <color name="accent_pink">#DF3568</color>
+    <color name="button_teal">#4A7D8E</color>
+    <color name="hint_gray">#888888</color>
+    <color name="text_dark">#222222</color>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <!-- Existing from new zip — untouched -->
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.fall_detection_app.ui.splash.SplashFragment"
+        tools:layout="@layout/splash">
+        <action
+            android:id="@+id/action_splash_to_onboarding"
+            app:destination="@id/onboardingFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.example.fall_detection_app.ui.onboarding.OnboardingFragment"
+        tools:layout="@layout/onboarding">
+        <action
+            android:id="@+id/action_onboarding_to_permissions"
+            app:destination="@id/permissionsFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/permissionsFragment"
+        android:name="com.example.fall_detection_app.ui.permissions.PermissionsFragment"
+        tools:layout="@layout/permissions">
+        <!-- This action leads into your signup page -->
+        <action
+            android:id="@+id/action_permissions_to_signUp"
+            app:destination="@id/signUpFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"/>
+    </fragment>
+
+    <!-- Your screens — added here -->
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.fall_detection_app.ui.auth.SignUpFragment"
+        tools:layout="@layout/signup">
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_signUpFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.fall_detection_app.ui.auth.LoginFragment"
+        tools:layout="@layout/login">
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.fall_detection_app.ui.home.HomeFragment"
+        tools:layout="@layout/home"/>
+
+</navigation>
