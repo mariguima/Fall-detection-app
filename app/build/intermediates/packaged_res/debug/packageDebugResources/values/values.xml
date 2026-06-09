@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent_pink">#DF3568</color>
+    <color name="background_green">#8AAF9A</color>
+    <color name="bgBottom">#69A297</color>
+    <color name="bgMid">#84B59F</color>
+    <color name="bgTop">#A3C9A8</color>
+    <color name="black">#FF000000</color>
+    <color name="button_teal">#4A7D8E</color>
+    <color name="card_cream">#EFE9BE</color>
+    <color name="hint_gray">#888888</color>
+    <color name="text_dark">#222222</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Fall-detection-app</string>
+    <string name="gcm_defaultSenderId" translatable="false">841357399646</string>
+    <string name="google_api_key" translatable="false">AIzaSyA2EDsrT4OigPWx3y14dbj3VtgVWzrmyeI</string>
+    <string name="google_app_id" translatable="false">1:841357399646:android:cba30ee55fb2fc515a06cf</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA2EDsrT4OigPWx3y14dbj3VtgVWzrmyeI</string>
+    <string name="google_storage_bucket" translatable="false">fall-detection-project-6cc1b.firebasestorage.app</string>
+    <string name="project_id" translatable="false">fall-detection-project-6cc1b</string>
+    <style name="Base.Theme.Falldetectionapp" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.Falldetectionapp" parent="Base.Theme.Falldetectionapp"/>
+</resources>
