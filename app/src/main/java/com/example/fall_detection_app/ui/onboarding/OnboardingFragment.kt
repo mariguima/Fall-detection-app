@@ -5,15 +5,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.example.fall_detection_app.R
 import com.example.fall_detection_app.databinding.OnboardingBinding
+import com.example.fall_detection_app.ui.onboarding.slides.RequirementsFragment
 
-class OnboardingFragment : Fragment() {
+class OnboardingFragment : Fragment(), RequirementsFragment.PermissionCallback {
 
     private var _binding: OnboardingBinding? = null
     private val binding get() = _binding!!
+
+    private val viewModel: OnboardingViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -26,14 +30,21 @@ class OnboardingFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // set up ViewPager2 with the 3 slides
+        // set up ViewPager2
         val adapter = OnboardingAdapter(this)
         binding.viewPager.adapter = adapter
 
-        // update dots and resize card when page changes
+        // set initial state
+        updateDots(0)
+        binding.btnNext.text = "Get started"
+        binding.btnNext.isEnabled = true
+        binding.btnNext.alpha = 1.0f
+
+        // update dots and button when page changes
         binding.viewPager.registerOnPageChangeCallback(object :
             ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
+
                 updateDots(position)
 
                 // resize ViewPager2 to match current slide height
@@ -44,23 +55,48 @@ class OnboardingFragment : Fragment() {
                     layoutParams.height = slideView.measuredHeight
                     binding.viewPager.layoutParams = layoutParams
                 }
+
+                when (position) {
+                    0 -> {
+                        binding.btnNext.text = "Get started"
+                        binding.btnNext.isEnabled = true
+                        binding.btnNext.alpha = 1.0f
+                    }
+                    1 -> {
+                        binding.btnNext.text = "Next"
+                        binding.btnNext.isEnabled = true
+                        binding.btnNext.alpha = 1.0f
+                    }
+                    2 -> {
+                        binding.btnNext.text = "Allow requirements"
+                        binding.btnNext.isEnabled = true
+                        binding.btnNext.alpha = 1.0f
+                    }
+                }
             }
         })
 
-        // start on first slide with dot 1 active
-        updateDots(0)
-
-        // next / get started button behaviour
+        // button click handler
         binding.btnNext.setOnClickListener {
             val current = binding.viewPager.currentItem
-            if (current < 2) {
-                // go to next slide
-                binding.viewPager.currentItem = current + 1
-            } else {
-                // last slide — navigate to permissions
-                findNavController().navigate(R.id.action_onboarding_to_permissions)
+            when (current) {
+                0 -> binding.viewPager.currentItem = 1
+                1 -> binding.viewPager.currentItem = 2
+                2 -> viewModel.triggerPermissionRequest()
             }
         }
+    }
+
+    // called by RequirementsFragment when both permissions granted
+    override fun onPermissionsGranted() {
+        findNavController().navigate(R.id.action_onboarding_to_findDevice)
+    }
+
+    // called by RequirementsFragment when a permission is denied
+    override fun onPermissionsDenied() {
+        binding.btnNext.text = "Allow requirements"
+        binding.btnNext.isEnabled = true
+        binding.btnNext.alpha = 1.0f
     }
 
     private fun updateDots(position: Int) {
@@ -71,9 +107,6 @@ class OnboardingFragment : Fragment() {
                 else R.drawable.dot_inactive
             )
         }
-
-        // change button text based on slide
-        binding.btnNext.text = if (position == 0) "Get started" else if (position == 2) "Next" else "Next"
     }
 
     override fun onDestroyView() {
