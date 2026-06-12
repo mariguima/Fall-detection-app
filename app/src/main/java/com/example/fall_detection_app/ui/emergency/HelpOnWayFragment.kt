@@ -7,9 +7,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.fall_detection_app.R
 
-class CallingFragment : Fragment() {
+class HelpOnWayFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View = inflater.inflate(R.layout.fragment_calling, container, false)
+    ): View = inflater.inflate(R.layout.fragment_help_on_way, container, false)
 }
