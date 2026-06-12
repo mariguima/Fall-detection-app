@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.fall_detection_app-mergeDebugResources-46:/values-v17/values-v17.xml",
+            "outputFile": "com.example.fall_detection_app-mergeDebugResources-55:/values-v17/values-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\maria\\.gradle\\caches\\9.1.0\\transforms\\6a26bc16ef2be36ebed90e3b76e56540\\workspace\\transformed\\appcompat-1.7.1\\res\\values-v17\\values-v17.xml",
+                    "source": "/Users/annieyang/.gradle/caches/9.1.0/transforms/080e93357265a1e9e9ed63e4c9aedb27/transformed/appcompat-1.7.1/res/values-v17/values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,25,29,33,37,40,43,46,50,53,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

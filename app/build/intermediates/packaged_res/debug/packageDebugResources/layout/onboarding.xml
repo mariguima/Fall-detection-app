@@ -10,15 +10,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/bg_screen"
-        android:scaleType="fitXY"/>
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <!-- Cream card -->
     <androidx.cardview.widget.CardView
         android:id="@+id/card"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="550dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
         app:cardCornerRadius="24dp"
         app:cardBackgroundColor="#F5F0DC"
         app:cardElevation="0dp"
@@ -39,7 +45,7 @@
             <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/viewPager"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="370dp"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
@@ -50,6 +56,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:gravity="center"
                 android:layout_marginTop="24dp"
                 app:layout_constraintTop_toBottomOf="@id/viewPager"
                 app:layout_constraintStart_toStartOf="parent"
@@ -60,7 +67,7 @@
                     android:layout_width="10dp"
                     android:layout_height="10dp"
                     android:layout_marginEnd="6dp"
-                    android:background="@drawable/dot_inactive"/>
+                    android:background="@drawable/dot_active"/>
 
                 <View
                     android:id="@+id/dot2"
@@ -77,16 +84,17 @@
 
             </LinearLayout>
 
-            <!-- Next button -->
+            <!-- Next / Get started button -->
             <Button
                 android:id="@+id/btnNext"
                 android:layout_width="0dp"
                 android:layout_height="52dp"
-                android:text="Next"
+                android:text="Get started"
                 android:textColor="#F5F0DC"
                 android:textSize="16sp"
                 android:backgroundTint="#5A8A9F"
                 android:layout_marginTop="24dp"
+                android:elevation="12dp"
                 app:cornerRadius="32dp"
                 app:layout_constraintTop_toBottomOf="@id/dotsLayout"
                 app:layout_constraintStart_toStartOf="parent"

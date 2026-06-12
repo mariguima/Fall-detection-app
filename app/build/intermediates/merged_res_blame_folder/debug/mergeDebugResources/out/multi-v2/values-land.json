@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.fall_detection_app-mergeDebugResources-46:/values-land/values-land.xml",
+            "outputFile": "com.example.fall_detection_app-mergeDebugResources-55:/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\maria\\.gradle\\caches\\9.1.0\\transforms\\23595f23830f73863d6f9feefc4389dc\\workspace\\transformed\\material-1.13.0\\res\\values-land\\values-land.xml",
+                    "source": "/Users/annieyang/.gradle/caches/9.1.0/transforms/bef177e99bd908743ecc5b98e3a4dd68/transformed/material-1.13.0/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,22,31,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\maria\\.gradle\\caches\\9.1.0\\transforms\\6a26bc16ef2be36ebed90e3b76e56540\\workspace\\transformed\\appcompat-1.7.1\\res\\values-land\\values-land.xml",
+                    "source": "/Users/annieyang/.gradle/caches/9.1.0/transforms/080e93357265a1e9e9ed63e4c9aedb27/transformed/appcompat-1.7.1/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",

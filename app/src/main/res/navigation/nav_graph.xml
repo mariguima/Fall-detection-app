@@ -40,7 +40,7 @@
             app:popUpToInclusive="true"/>
         <action
             android:id="@+id/action_signUpFragment_to_homeFragment"
-            app:destination="@id/homeFragment"
+            app:destination="@id/findDeviceFragment"
             app:popUpTo="@id/nav_graph"
             app:popUpToInclusive="true"/>
     </fragment>
@@ -51,7 +51,7 @@
         tools:layout="@layout/login">
         <action
             android:id="@+id/action_loginFragment_to_homeFragment"
-            app:destination="@id/homeFragment"
+            app:destination="@id/findDeviceFragment"
             app:popUpTo="@id/nav_graph"
             app:popUpToInclusive="true"/>
     </fragment>
@@ -73,9 +73,9 @@
         tools:layout="@layout/wifi_connection">
         <action
             android:id="@+id/action_wifiConnection_to_home"
-            app:destination="@id/homeFragment"
-            app:enterAnim="@anim/fade_in"
-            app:exitAnim="@anim/fade_out"/>
+            app:destination="@id/alertFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true"/>
     </fragment>
 
     <fragment
@@ -142,11 +142,5 @@
             app:enterAnim="@anim/fade_in"
             app:exitAnim="@anim/fade_out"/>
     </fragment>
-
-    <fragment
-        android:id="@+id/permissionsFragment"
-        android:name="com.example.fall_detection_app.ui.permissions.PermissionsFragment"
-        tools:layout="@layout/permissions"/>
-
 
 </navigation>

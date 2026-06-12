@@ -89,7 +89,7 @@ class OnboardingFragment : Fragment(), RequirementsFragment.PermissionCallback {
 
     // called by RequirementsFragment when both permissions granted
     override fun onPermissionsGranted() {
-        findNavController().navigate(R.id.action_onboarding_to_findDevice)
+        findNavController().navigate(R.id.action_permissions_to_signUp)
     }
 
     // called by RequirementsFragment when a permission is denied

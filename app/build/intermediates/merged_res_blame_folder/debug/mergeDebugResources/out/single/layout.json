@@ -1,54 +1,54 @@
 [
     {
-        "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-mergeDebugResources-47:\\layout\\slide_how_it_works.xml",
-        "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-50:\\layout\\slide_how_it_works.xml"
+        "merged": "/Users/annieyang/.gradle/daemon/9.1.0/com.example.fall_detection_app-mergeDebugResources-56:/layout/slide_requirements.xml",
+        "source": "/Users/annieyang/.gradle/daemon/9.1.0/com.example.fall_detection_app-main-59:/layout/slide_requirements.xml"
     },
     {
-        "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-mergeDebugResources-47:\\layout\\permissions.xml",
-        "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-50:\\layout\\permissions.xml"
+        "merged": "/Users/annieyang/.gradle/daemon/9.1.0/com.example.fall_detection_app-mergeDebugResources-56:/layout/wifi_connection.xml",
+        "source": "/Users/annieyang/.gradle/daemon/9.1.0/com.example.fall_detection_app-main-59:/layout/wifi_connection.xml"
     },
     {
-        "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-mergeDebugResources-47:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-50:\\layout\\activity_main.xml"
+        "merged": "/Users/annieyang/.gradle/daemon/9.1.0/com.example.fall_detection_app-mergeDebugResources-56:/layout/activity_main.xml",
+        "source": "/Users/annieyang/.gradle/daemon/9.1.0/com.example.fall_detection_app-main-59:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-mergeDebugResources-47:\\layout\\slide_requirements.xml",
-        "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-50:\\layout\\slide_requirements.xml"
+        "merged": "/Users/annieyang/.gradle/daemon/9.1.0/com.example.fall_detection_app-mergeDebugResources-56:/layout/login.xml",
+        "source": "/Users/annieyang/.gradle/daemon/9.1.0/com.example.fall_detection_app-main-59:/layout/login.xml"
     },
     {
-        "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-mergeDebugResources-47:\\layout\\onboarding.xml",
-        "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-50:\\layout\\onboarding.xml"
+        "merged": "/Users/annieyang/.gradle/daemon/9.1.0/com.example.fall_detection_app-mergeDebugResources-56:/layout/home.xml",
+        "source": "/Users/annieyang/.gradle/daemon/9.1.0/com.example.fall_detection_app-main-59:/layout/home.xml"
     },
     {
-        "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-mergeDebugResources-47:\\layout\\find_device.xml",
-        "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-50:\\layout\\find_device.xml"
+        "merged": "/Users/annieyang/.gradle/daemon/9.1.0/com.example.fall_detection_app-mergeDebugResources-56:/layout/signup.xml",
+        "source": "/Users/annieyang/.gradle/daemon/9.1.0/com.example.fall_detection_app-main-59:/layout/signup.xml"
     },
     {
-        "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-mergeDebugResources-47:\\layout\\login.xml",
-        "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-50:\\layout\\login.xml"
+        "merged": "/Users/annieyang/.gradle/daemon/9.1.0/com.example.fall_detection_app-mergeDebugResources-56:/layout/slide_how_it_works.xml",
+        "source": "/Users/annieyang/.gradle/daemon/9.1.0/com.example.fall_detection_app-main-59:/layout/slide_how_it_works.xml"
     },
     {
-        "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-mergeDebugResources-47:\\layout\\alert.xml",
-        "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-50:\\layout\\alert.xml"
+        "merged": "com.example.fall_detection_app-mergeDebugResources-56:/layout/alert.xml",
+        "source": "com.example.fall_detection_app-main-59:/layout/alert.xml"
     },
     {
-        "merged": "com.example.fall_detection_app-mergeDebugResources-47:/layout/find_device.xml",
-        "source": "com.example.fall_detection_app-main-50:/layout/find_device.xml"
+        "merged": "/Users/annieyang/.gradle/daemon/9.1.0/com.example.fall_detection_app-mergeDebugResources-56:/layout/onboarding.xml",
+        "source": "/Users/annieyang/.gradle/daemon/9.1.0/com.example.fall_detection_app-main-59:/layout/onboarding.xml"
     },
     {
-        "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-mergeDebugResources-47:\\layout\\splash.xml",
-        "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-50:\\layout\\splash.xml"
+        "merged": "/Users/annieyang/.gradle/daemon/9.1.0/com.example.fall_detection_app-mergeDebugResources-56:/layout/slide_always_watching.xml",
+        "source": "/Users/annieyang/.gradle/daemon/9.1.0/com.example.fall_detection_app-main-59:/layout/slide_always_watching.xml"
     },
     {
-        "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-mergeDebugResources-47:\\layout\\home.xml",
-        "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-50:\\layout\\home.xml"
+        "merged": "/Users/annieyang/.gradle/daemon/9.1.0/com.example.fall_detection_app-mergeDebugResources-56:/layout/splash.xml",
+        "source": "/Users/annieyang/.gradle/daemon/9.1.0/com.example.fall_detection_app-main-59:/layout/splash.xml"
     },
     {
-        "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-mergeDebugResources-47:\\layout\\slide_always_watching.xml",
-        "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-50:\\layout\\slide_always_watching.xml"
+        "merged": "/Users/annieyang/.gradle/daemon/9.1.0/com.example.fall_detection_app-mergeDebugResources-56:/layout/find_device.xml",
+        "source": "/Users/annieyang/.gradle/daemon/9.1.0/com.example.fall_detection_app-main-59:/layout/find_device.xml"
     },
     {
-        "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-mergeDebugResources-47:\\layout\\wifi_connection.xml",
-        "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-50:\\layout\\wifi_connection.xml"
+        "merged": "/Users/annieyang/.gradle/daemon/9.1.0/com.example.fall_detection_app-mergeDebugResources-56:/layout/alert.xml",
+        "source": "/Users/annieyang/.gradle/daemon/9.1.0/com.example.fall_detection_app-main-59:/layout/alert.xml"
     }
 ]

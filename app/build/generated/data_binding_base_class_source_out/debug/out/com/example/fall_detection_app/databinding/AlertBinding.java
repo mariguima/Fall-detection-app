@@ -4,20 +4,73 @@ package com.example.fall_detection_app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.fall_detection_app.R;
+import com.google.android.material.button.MaterialButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class AlertBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
 
-  private AlertBinding(@NonNull ConstraintLayout rootView) {
+  @NonNull
+  public final MaterialButton btnNo;
+
+  @NonNull
+  public final MaterialButton btnViewHistory;
+
+  @NonNull
+  public final MaterialButton btnYes;
+
+  @NonNull
+  public final ConstraintLayout layoutFallDetected;
+
+  @NonNull
+  public final ConstraintLayout layoutNoFall;
+
+  @NonNull
+  public final View mapPlaceholder;
+
+  @NonNull
+  public final TextView tvLastFallLabel;
+
+  @NonNull
+  public final TextView tvLastFallTime;
+
+  @NonNull
+  public final TextView tvQuestion;
+
+  @NonNull
+  public final TextView tvStatus;
+
+  @NonNull
+  public final TextView tvTime;
+
+  private AlertBinding(@NonNull ConstraintLayout rootView, @NonNull MaterialButton btnNo,
+      @NonNull MaterialButton btnViewHistory, @NonNull MaterialButton btnYes,
+      @NonNull ConstraintLayout layoutFallDetected, @NonNull ConstraintLayout layoutNoFall,
+      @NonNull View mapPlaceholder, @NonNull TextView tvLastFallLabel,
+      @NonNull TextView tvLastFallTime, @NonNull TextView tvQuestion, @NonNull TextView tvStatus,
+      @NonNull TextView tvTime) {
     this.rootView = rootView;
+    this.btnNo = btnNo;
+    this.btnViewHistory = btnViewHistory;
+    this.btnYes = btnYes;
+    this.layoutFallDetected = layoutFallDetected;
+    this.layoutNoFall = layoutNoFall;
+    this.mapPlaceholder = mapPlaceholder;
+    this.tvLastFallLabel = tvLastFallLabel;
+    this.tvLastFallTime = tvLastFallTime;
+    this.tvQuestion = tvQuestion;
+    this.tvStatus = tvStatus;
+    this.tvTime = tvTime;
   }
 
   @Override
@@ -43,10 +96,81 @@ public final class AlertBinding implements ViewBinding {
 
   @NonNull
   public static AlertBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.btnNo;
+      MaterialButton btnNo = ViewBindings.findChildViewById(rootView, id);
+      if (btnNo == null) {
+        break missingId;
+      }
 
-    return new AlertBinding((ConstraintLayout) rootView);
+      id = R.id.btnViewHistory;
+      MaterialButton btnViewHistory = ViewBindings.findChildViewById(rootView, id);
+      if (btnViewHistory == null) {
+        break missingId;
+      }
+
+      id = R.id.btnYes;
+      MaterialButton btnYes = ViewBindings.findChildViewById(rootView, id);
+      if (btnYes == null) {
+        break missingId;
+      }
+
+      id = R.id.layoutFallDetected;
+      ConstraintLayout layoutFallDetected = ViewBindings.findChildViewById(rootView, id);
+      if (layoutFallDetected == null) {
+        break missingId;
+      }
+
+      id = R.id.layoutNoFall;
+      ConstraintLayout layoutNoFall = ViewBindings.findChildViewById(rootView, id);
+      if (layoutNoFall == null) {
+        break missingId;
+      }
+
+      id = R.id.mapPlaceholder;
+      View mapPlaceholder = ViewBindings.findChildViewById(rootView, id);
+      if (mapPlaceholder == null) {
+        break missingId;
+      }
+
+      id = R.id.tvLastFallLabel;
+      TextView tvLastFallLabel = ViewBindings.findChildViewById(rootView, id);
+      if (tvLastFallLabel == null) {
+        break missingId;
+      }
+
+      id = R.id.tvLastFallTime;
+      TextView tvLastFallTime = ViewBindings.findChildViewById(rootView, id);
+      if (tvLastFallTime == null) {
+        break missingId;
+      }
+
+      id = R.id.tvQuestion;
+      TextView tvQuestion = ViewBindings.findChildViewById(rootView, id);
+      if (tvQuestion == null) {
+        break missingId;
+      }
+
+      id = R.id.tvStatus;
+      TextView tvStatus = ViewBindings.findChildViewById(rootView, id);
+      if (tvStatus == null) {
+        break missingId;
+      }
+
+      id = R.id.tvTime;
+      TextView tvTime = ViewBindings.findChildViewById(rootView, id);
+      if (tvTime == null) {
+        break missingId;
+      }
+
+      return new AlertBinding((ConstraintLayout) rootView, btnNo, btnViewHistory, btnYes,
+          layoutFallDetected, layoutNoFall, mapPlaceholder, tvLastFallLabel, tvLastFallTime,
+          tvQuestion, tvStatus, tvTime);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

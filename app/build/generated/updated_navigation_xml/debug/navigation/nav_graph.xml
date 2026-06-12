@@ -4,8 +4,6 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:id="@+id/nav_graph"
 app:startDestination="@id/splashFragment" >
-
-<!-- Existing from new zip — untouched -->
 <fragment
     android:id="@+id/splashFragment"
     android:name="com.example.fall_detection_app.ui.splash.SplashFragment"
@@ -23,19 +21,6 @@ app:startDestination="@id/splashFragment" >
     android:name="com.example.fall_detection_app.ui.onboarding.OnboardingFragment"
     tools:layout="@layout/onboarding" >
 
-    <action
-        android:id="@+id/action_onboarding_to_permissions"
-        app:destination="@id/permissionsFragment"
-        app:enterAnim="@anim/fade_in"
-        app:exitAnim="@anim/fade_out" />
-
-</fragment>
-<fragment
-    android:id="@+id/permissionsFragment"
-    android:name="com.example.fall_detection_app.ui.permissions.PermissionsFragment"
-    tools:layout="@layout/permissions" >
-
-    <!-- This action leads into your signup page -->
     <action
         android:id="@+id/action_permissions_to_signUp"
         app:destination="@id/signUpFragment"
@@ -57,7 +42,7 @@ app:startDestination="@id/splashFragment" >
         app:popUpToInclusive="true" />
     <action
         android:id="@+id/action_signUpFragment_to_homeFragment"
-        app:destination="@id/homeFragment"
+        app:destination="@id/findDeviceFragment"
         app:popUpTo="@id/nav_graph"
         app:popUpToInclusive="true" />
 
@@ -69,7 +54,31 @@ app:startDestination="@id/splashFragment" >
 
     <action
         android:id="@+id/action_loginFragment_to_homeFragment"
-        app:destination="@id/homeFragment"
+        app:destination="@id/findDeviceFragment"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true" />
+
+</fragment>
+<fragment
+    android:id="@+id/findDeviceFragment"
+    android:name="com.example.fall_detection_app.ui.setup.FindDeviceFragment"
+    tools:layout="@layout/find_device" >
+
+    <action
+        android:id="@+id/action_findDevice_to_wifiConnection"
+        app:destination="@id/wifiConnectionFragment"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out" />
+
+</fragment>
+<fragment
+    android:id="@+id/wifiConnectionFragment"
+    android:name="com.example.fall_detection_app.ui.setup.WifiConnectionFragment"
+    tools:layout="@layout/wifi_connection" >
+
+    <action
+        android:id="@+id/action_wifiConnection_to_home"
+        app:destination="@id/alertFragment"
         app:popUpTo="@id/nav_graph"
         app:popUpToInclusive="true" />
 
@@ -77,5 +86,71 @@ app:startDestination="@id/splashFragment" >
 <fragment
     android:id="@+id/homeFragment"
     android:name="com.example.fall_detection_app.ui.home.HomeFragment"
-    tools:layout="@layout/home" />
+    tools:layout="@layout/home" >
+
+    <action
+        android:id="@+id/action_home_to_alert"
+        app:destination="@id/alertFragment"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out" />
+    <action
+        android:id="@+id/action_home_to_history"
+        app:destination="@id/historyFragment"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out" />
+
+</fragment>
+<fragment
+    android:id="@+id/alertFragment"
+    android:name="com.example.fall_detection_app.ui.alert.AlertFragment"
+    tools:layout="@layout/alert" >
+
+    <action
+        android:id="@+id/action_alert_to_home"
+        app:destination="@id/homeFragment"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out" />
+    <action
+        android:id="@+id/action_alert_to_emergency"
+        app:destination="@id/emergencyFragment"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out" />
+
+</fragment>
+<fragment
+    android:id="@+id/historyFragment"
+    android:name="com.example.fall_detection_app.ui.history.HistoryFragment"
+    tools:layout="@layout/fragment_history" >
+
+    <action
+        android:id="@+id/action_history_to_home"
+        app:destination="@id/homeFragment"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out" />
+
+</fragment>
+<fragment
+    android:id="@+id/emergencyFragment"
+    android:name="com.example.fall_detection_app.ui.emergency.CallingFragment"
+    tools:layout="@layout/fragment_calling" >
+
+    <action
+        android:id="@+id/action_emergency_to_helpOnWay"
+        app:destination="@id/helpOnWayFragment"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out" />
+
+</fragment>
+<fragment
+    android:id="@+id/helpOnWayFragment"
+    android:name="com.example.fall_detection_app.ui.emergency.HelpOnWayFragment"
+    tools:layout="@layout/fragment_help_on_way" >
+
+    <action
+        android:id="@+id/action_helpOnWay_to_home"
+        app:destination="@id/homeFragment"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out" />
+
+</fragment>
 </navigation>

@@ -4,20 +4,60 @@ package com.example.fall_detection_app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.fall_detection_app.R;
+import com.google.android.material.button.MaterialButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class FindDeviceBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
 
-  private FindDeviceBinding(@NonNull ConstraintLayout rootView) {
+  @NonNull
+  public final MaterialButton btnConnect;
+
+  @NonNull
+  public final MaterialButton btnSearch;
+
+  @NonNull
+  public final CardView card;
+
+  @NonNull
+  public final TextView tvDeviceName;
+
+  @NonNull
+  public final TextView tvDevicesTitle;
+
+  @NonNull
+  public final TextView tvSubtitle;
+
+  @NonNull
+  public final TextView tvTapHint;
+
+  @NonNull
+  public final TextView tvTitle;
+
+  private FindDeviceBinding(@NonNull ConstraintLayout rootView, @NonNull MaterialButton btnConnect,
+      @NonNull MaterialButton btnSearch, @NonNull CardView card, @NonNull TextView tvDeviceName,
+      @NonNull TextView tvDevicesTitle, @NonNull TextView tvSubtitle, @NonNull TextView tvTapHint,
+      @NonNull TextView tvTitle) {
     this.rootView = rootView;
+    this.btnConnect = btnConnect;
+    this.btnSearch = btnSearch;
+    this.card = card;
+    this.tvDeviceName = tvDeviceName;
+    this.tvDevicesTitle = tvDevicesTitle;
+    this.tvSubtitle = tvSubtitle;
+    this.tvTapHint = tvTapHint;
+    this.tvTitle = tvTitle;
   }
 
   @Override
@@ -43,10 +83,62 @@ public final class FindDeviceBinding implements ViewBinding {
 
   @NonNull
   public static FindDeviceBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.btnConnect;
+      MaterialButton btnConnect = ViewBindings.findChildViewById(rootView, id);
+      if (btnConnect == null) {
+        break missingId;
+      }
 
-    return new FindDeviceBinding((ConstraintLayout) rootView);
+      id = R.id.btnSearch;
+      MaterialButton btnSearch = ViewBindings.findChildViewById(rootView, id);
+      if (btnSearch == null) {
+        break missingId;
+      }
+
+      id = R.id.card;
+      CardView card = ViewBindings.findChildViewById(rootView, id);
+      if (card == null) {
+        break missingId;
+      }
+
+      id = R.id.tvDeviceName;
+      TextView tvDeviceName = ViewBindings.findChildViewById(rootView, id);
+      if (tvDeviceName == null) {
+        break missingId;
+      }
+
+      id = R.id.tvDevicesTitle;
+      TextView tvDevicesTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvDevicesTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.tvSubtitle;
+      TextView tvSubtitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvSubtitle == null) {
+        break missingId;
+      }
+
+      id = R.id.tvTapHint;
+      TextView tvTapHint = ViewBindings.findChildViewById(rootView, id);
+      if (tvTapHint == null) {
+        break missingId;
+      }
+
+      id = R.id.tvTitle;
+      TextView tvTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvTitle == null) {
+        break missingId;
+      }
+
+      return new FindDeviceBinding((ConstraintLayout) rootView, btnConnect, btnSearch, card,
+          tvDeviceName, tvDevicesTitle, tvSubtitle, tvTapHint, tvTitle);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }
