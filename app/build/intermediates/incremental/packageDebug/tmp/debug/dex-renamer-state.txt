@@ -1,15 +1,15 @@
-#Thu Jun 11 19:27:28 BST 2026
-base.0=/Users/annieyang/StudioProjects/Fall-detection-app/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
-base.1=/Users/annieyang/StudioProjects/Fall-detection-app/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.10=/Users/annieyang/StudioProjects/Fall-detection-app/app/build/intermediates/dex/debug/mergeExtDexDebug/classes3.dex
-base.2=/Users/annieyang/StudioProjects/Fall-detection-app/app/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex
-base.3=/Users/annieyang/StudioProjects/Fall-detection-app/app/build/intermediates/dex/debug/mergeProjectDexDebug/12/classes.dex
-base.4=/Users/annieyang/StudioProjects/Fall-detection-app/app/build/intermediates/dex/debug/mergeProjectDexDebug/14/classes.dex
-base.5=/Users/annieyang/StudioProjects/Fall-detection-app/app/build/intermediates/dex/debug/mergeProjectDexDebug/2/classes.dex
-base.6=/Users/annieyang/StudioProjects/Fall-detection-app/app/build/intermediates/dex/debug/mergeProjectDexDebug/3/classes.dex
-base.7=/Users/annieyang/StudioProjects/Fall-detection-app/app/build/intermediates/dex/debug/mergeProjectDexDebug/8/classes.dex
-base.8=/Users/annieyang/StudioProjects/Fall-detection-app/app/build/intermediates/dex/debug/mergeProjectDexDebug/9/classes.dex
-base.9=/Users/annieyang/StudioProjects/Fall-detection-app/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
+#Fri Jun 19 13:41:38 BST 2026
+base.0=C\:\\Users\\maria\\AndroidStudioProjects\\Fall-detection-app\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\maria\\AndroidStudioProjects\\Fall-detection-app\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.10=C\:\\Users\\maria\\AndroidStudioProjects\\Fall-detection-app\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
+base.2=C\:\\Users\\maria\\AndroidStudioProjects\\Fall-detection-app\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
+base.3=C\:\\Users\\maria\\AndroidStudioProjects\\Fall-detection-app\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
+base.4=C\:\\Users\\maria\\AndroidStudioProjects\\Fall-detection-app\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
+base.5=C\:\\Users\\maria\\AndroidStudioProjects\\Fall-detection-app\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
+base.6=C\:\\Users\\maria\\AndroidStudioProjects\\Fall-detection-app\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
+base.7=C\:\\Users\\maria\\AndroidStudioProjects\\Fall-detection-app\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
+base.8=C\:\\Users\\maria\\AndroidStudioProjects\\Fall-detection-app\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
+base.9=C\:\\Users\\maria\\AndroidStudioProjects\\Fall-detection-app\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.10=classes3.dex

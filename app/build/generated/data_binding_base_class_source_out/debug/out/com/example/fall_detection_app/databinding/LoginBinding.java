@@ -5,10 +5,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.fall_detection_app.R;
@@ -19,13 +20,13 @@ import java.lang.String;
 
 public final class LoginBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final FrameLayout rootView;
 
   @NonNull
   public final MaterialButton btnGetStarted;
 
   @NonNull
-  public final ConstraintLayout card;
+  public final CardView card;
 
   @NonNull
   public final EditText etEmail;
@@ -34,22 +35,26 @@ public final class LoginBinding implements ViewBinding {
   public final EditText etPassword;
 
   @NonNull
+  public final TextView tvGoToSignUp;
+
+  @NonNull
   public final TextView tvTitle;
 
-  private LoginBinding(@NonNull ConstraintLayout rootView, @NonNull MaterialButton btnGetStarted,
-      @NonNull ConstraintLayout card, @NonNull EditText etEmail, @NonNull EditText etPassword,
-      @NonNull TextView tvTitle) {
+  private LoginBinding(@NonNull FrameLayout rootView, @NonNull MaterialButton btnGetStarted,
+      @NonNull CardView card, @NonNull EditText etEmail, @NonNull EditText etPassword,
+      @NonNull TextView tvGoToSignUp, @NonNull TextView tvTitle) {
     this.rootView = rootView;
     this.btnGetStarted = btnGetStarted;
     this.card = card;
     this.etEmail = etEmail;
     this.etPassword = etPassword;
+    this.tvGoToSignUp = tvGoToSignUp;
     this.tvTitle = tvTitle;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public FrameLayout getRoot() {
     return rootView;
   }
 
@@ -81,7 +86,7 @@ public final class LoginBinding implements ViewBinding {
       }
 
       id = R.id.card;
-      ConstraintLayout card = ViewBindings.findChildViewById(rootView, id);
+      CardView card = ViewBindings.findChildViewById(rootView, id);
       if (card == null) {
         break missingId;
       }
@@ -98,14 +103,20 @@ public final class LoginBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvGoToSignUp;
+      TextView tvGoToSignUp = ViewBindings.findChildViewById(rootView, id);
+      if (tvGoToSignUp == null) {
+        break missingId;
+      }
+
       id = R.id.tvTitle;
       TextView tvTitle = ViewBindings.findChildViewById(rootView, id);
       if (tvTitle == null) {
         break missingId;
       }
 
-      return new LoginBinding((ConstraintLayout) rootView, btnGetStarted, card, etEmail, etPassword,
-          tvTitle);
+      return new LoginBinding((FrameLayout) rootView, btnGetStarted, card, etEmail, etPassword,
+          tvGoToSignUp, tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

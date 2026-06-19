@@ -82,7 +82,7 @@ class SignUpFragment : Fragment() {
                             "monitoredAddress" to monitoredAddress
                         ))
                         .addOnSuccessListener {
-                            findNavController().navigate(R.id.action_signUpFragment_to_homeFragment)
+                            findNavController().navigate(R.id.action_signUpFragment_to_espConnectFragment)
                         }
                         .addOnFailureListener { e ->
                             btnFinish.isEnabled = true

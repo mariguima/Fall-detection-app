@@ -5,7 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.ScrollView;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -19,7 +19,7 @@ import java.lang.String;
 
 public final class SignupBinding implements ViewBinding {
   @NonNull
-  private final ScrollView rootView;
+  private final FrameLayout rootView;
 
   @NonNull
   public final MaterialButton btnFinish;
@@ -45,7 +45,7 @@ public final class SignupBinding implements ViewBinding {
   @NonNull
   public final TextView tvTitle;
 
-  private SignupBinding(@NonNull ScrollView rootView, @NonNull MaterialButton btnFinish,
+  private SignupBinding(@NonNull FrameLayout rootView, @NonNull MaterialButton btnFinish,
       @NonNull EditText etEmail, @NonNull EditText etMonitoredAddress,
       @NonNull EditText etMonitoredNumber, @NonNull EditText etPassword,
       @NonNull EditText etYourNumber, @NonNull TextView tvGoToLogin, @NonNull TextView tvTitle) {
@@ -62,7 +62,7 @@ public final class SignupBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public ScrollView getRoot() {
+  public FrameLayout getRoot() {
     return rootView;
   }
 
@@ -135,7 +135,7 @@ public final class SignupBinding implements ViewBinding {
         break missingId;
       }
 
-      return new SignupBinding((ScrollView) rootView, btnFinish, etEmail, etMonitoredAddress,
+      return new SignupBinding((FrameLayout) rootView, btnFinish, etEmail, etMonitoredAddress,
           etMonitoredNumber, etPassword, etYourNumber, tvGoToLogin, tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);

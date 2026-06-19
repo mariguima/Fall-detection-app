@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.fall_detection_app.R
 import com.google.android.material.button.MaterialButton
+import com.google.firebase.auth.FirebaseAuth
 
 class HomeFragment : Fragment() {
 
@@ -21,6 +22,13 @@ class HomeFragment : Fragment() {
 
         view.findViewById<MaterialButton>(R.id.btnViewHistory).setOnClickListener {
             findNavController().navigate(R.id.action_home_to_history)
+        }
+
+        view.findViewById<MaterialButton>(R.id.btnLogout).setOnClickListener {
+            // sign out from Firebase
+            FirebaseAuth.getInstance().signOut()
+            // navigate back to splash screen clearing entire back stack
+            findNavController().navigate(R.id.action_home_to_splash)
         }
     }
 }

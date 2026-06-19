@@ -22,6 +22,9 @@ public final class HomeBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final MaterialButton btnLogout;
+
+  @NonNull
   public final MaterialButton btnViewHistory;
 
   @NonNull
@@ -39,11 +42,12 @@ public final class HomeBinding implements ViewBinding {
   @NonNull
   public final TextView tvStatus;
 
-  private HomeBinding(@NonNull ConstraintLayout rootView, @NonNull MaterialButton btnViewHistory,
-      @NonNull CardView card, @NonNull ConstraintLayout lastFallBox,
-      @NonNull TextView tvLastFallLabel, @NonNull TextView tvLastFallTime,
-      @NonNull TextView tvStatus) {
+  private HomeBinding(@NonNull ConstraintLayout rootView, @NonNull MaterialButton btnLogout,
+      @NonNull MaterialButton btnViewHistory, @NonNull CardView card,
+      @NonNull ConstraintLayout lastFallBox, @NonNull TextView tvLastFallLabel,
+      @NonNull TextView tvLastFallTime, @NonNull TextView tvStatus) {
     this.rootView = rootView;
+    this.btnLogout = btnLogout;
     this.btnViewHistory = btnViewHistory;
     this.card = card;
     this.lastFallBox = lastFallBox;
@@ -79,6 +83,12 @@ public final class HomeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnLogout;
+      MaterialButton btnLogout = ViewBindings.findChildViewById(rootView, id);
+      if (btnLogout == null) {
+        break missingId;
+      }
+
       id = R.id.btnViewHistory;
       MaterialButton btnViewHistory = ViewBindings.findChildViewById(rootView, id);
       if (btnViewHistory == null) {
@@ -115,8 +125,8 @@ public final class HomeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new HomeBinding((ConstraintLayout) rootView, btnViewHistory, card, lastFallBox,
-          tvLastFallLabel, tvLastFallTime, tvStatus);
+      return new HomeBinding((ConstraintLayout) rootView, btnLogout, btnViewHistory, card,
+          lastFallBox, tvLastFallLabel, tvLastFallTime, tvStatus);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
