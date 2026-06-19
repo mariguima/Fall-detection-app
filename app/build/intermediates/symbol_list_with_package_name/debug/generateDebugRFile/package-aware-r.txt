@@ -55,6 +55,7 @@ id espConnectFragment
 id etEmail
 id etMonitoredAddress
 id etMonitoredNumber
+id etName
 id etPassword
 id etYourNumber
 id helpOnWayFragment

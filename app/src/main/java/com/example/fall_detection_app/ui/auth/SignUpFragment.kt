@@ -34,6 +34,7 @@ class SignUpFragment : Fragment() {
 
         val etEmail = view.findViewById<EditText>(R.id.etEmail)
         val etPassword = view.findViewById<EditText>(R.id.etPassword)
+        val etName = view.findViewById<EditText>(R.id.etName)
         val etYourNumber = view.findViewById<EditText>(R.id.etYourNumber)
         val etMonitoredNumber = view.findViewById<EditText>(R.id.etMonitoredNumber)
         val etMonitoredAddress = view.findViewById<EditText>(R.id.etMonitoredAddress)
@@ -59,12 +60,14 @@ class SignUpFragment : Fragment() {
         btnFinish.setOnClickListener {
             val email = etEmail.text.toString().trim()
             val password = etPassword.text.toString()
+            val name = etName.text.toString().trim()
             val yourNumber = etYourNumber.text.toString().trim()
             val monitoredNumber = etMonitoredNumber.text.toString().trim()
             val monitoredAddress = etMonitoredAddress.text.toString().trim()
 
             if (email.isEmpty()) { etEmail.error = "Required"; return@setOnClickListener }
             if (password.length < 6) { etPassword.error = "Min 6 characters"; return@setOnClickListener }
+            if (name.isEmpty()) { etName.error = "Required"; return@setOnClickListener }
             if (yourNumber.isEmpty()) { etYourNumber.error = "Required"; return@setOnClickListener }
             if (monitoredNumber.isEmpty()) { etMonitoredNumber.error = "Required"; return@setOnClickListener }
             if (monitoredAddress.isEmpty()) { etMonitoredAddress.error = "Required"; return@setOnClickListener }
@@ -77,6 +80,7 @@ class SignUpFragment : Fragment() {
                     val db = FirebaseFirestore.getInstance()
                     db.collection("users").document(userId)
                         .set(mapOf(
+                            "name" to name,
                             "yourNumber" to yourNumber,
                             "monitoredNumber" to monitoredNumber,
                             "monitoredAddress" to monitoredAddress

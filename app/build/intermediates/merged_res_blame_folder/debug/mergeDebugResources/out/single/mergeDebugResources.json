@@ -56,10 +56,6 @@
         "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-59:\\drawable\\dot_inactive.xml"
     },
     {
-        "merged": "com.example.fall_detection_app-debug-57:/layout_login.xml.flat",
-        "source": "com.example.fall_detection_app-main-59:/layout/login.xml"
-    },
-    {
         "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-debug-57:\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-59:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
@@ -108,20 +104,8 @@
         "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-59:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.example.fall_detection_app-debug-57:/layout_slide_requirements.xml.flat",
-        "source": "com.example.fall_detection_app-main-59:/layout/slide_requirements.xml"
-    },
-    {
-        "merged": "com.example.fall_detection_app-debug-57:/layout_onboarding.xml.flat",
-        "source": "com.example.fall_detection_app-main-59:/layout/onboarding.xml"
-    },
-    {
         "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-debug-57:\\drawable_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-59:\\drawable\\ic_launcher_foreground.xml"
-    },
-    {
-        "merged": "com.example.fall_detection_app-debug-57:/layout_esp_connect.xml.flat",
-        "source": "com.example.fall_detection_app-main-59:/layout/esp_connect.xml"
     },
     {
         "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-debug-57:\\layout_signup.xml.flat",
@@ -148,6 +132,10 @@
         "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-59:\\layout\\onboarding.xml"
     },
     {
+        "merged": "com.example.fall_detection_app-debug-57:/layout_signup.xml.flat",
+        "source": "com.example.fall_detection_app-main-59:/layout/signup.xml"
+    },
+    {
         "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-debug-57:\\layout_login.xml.flat",
         "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-59:\\layout\\login.xml"
     },
@@ -156,24 +144,12 @@
         "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-59:\\drawable\\rounded_gray_bg.xml"
     },
     {
-        "merged": "com.example.fall_detection_app-debug-57:/layout_slide_how_it_works.xml.flat",
-        "source": "com.example.fall_detection_app-main-59:/layout/slide_how_it_works.xml"
-    },
-    {
         "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-debug-57:\\layout_fragment_calling.xml.flat",
         "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-59:\\layout\\fragment_calling.xml"
     },
     {
-        "merged": "com.example.fall_detection_app-debug-57:/layout_home.xml.flat",
-        "source": "com.example.fall_detection_app-main-59:/layout/home.xml"
-    },
-    {
         "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-debug-57:\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-59:\\mipmap-mdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "com.example.fall_detection_app-debug-57:/layout_slide_always_watching.xml.flat",
-        "source": "com.example.fall_detection_app-main-59:/layout/slide_always_watching.xml"
     },
     {
         "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-debug-57:\\layout_home.xml.flat",

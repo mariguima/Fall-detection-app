@@ -34,6 +34,9 @@ public final class SignupBinding implements ViewBinding {
   public final EditText etMonitoredNumber;
 
   @NonNull
+  public final EditText etName;
+
+  @NonNull
   public final EditText etPassword;
 
   @NonNull
@@ -47,13 +50,14 @@ public final class SignupBinding implements ViewBinding {
 
   private SignupBinding(@NonNull FrameLayout rootView, @NonNull MaterialButton btnFinish,
       @NonNull EditText etEmail, @NonNull EditText etMonitoredAddress,
-      @NonNull EditText etMonitoredNumber, @NonNull EditText etPassword,
+      @NonNull EditText etMonitoredNumber, @NonNull EditText etName, @NonNull EditText etPassword,
       @NonNull EditText etYourNumber, @NonNull TextView tvGoToLogin, @NonNull TextView tvTitle) {
     this.rootView = rootView;
     this.btnFinish = btnFinish;
     this.etEmail = etEmail;
     this.etMonitoredAddress = etMonitoredAddress;
     this.etMonitoredNumber = etMonitoredNumber;
+    this.etName = etName;
     this.etPassword = etPassword;
     this.etYourNumber = etYourNumber;
     this.tvGoToLogin = tvGoToLogin;
@@ -111,6 +115,12 @@ public final class SignupBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.etName;
+      EditText etName = ViewBindings.findChildViewById(rootView, id);
+      if (etName == null) {
+        break missingId;
+      }
+
       id = R.id.etPassword;
       EditText etPassword = ViewBindings.findChildViewById(rootView, id);
       if (etPassword == null) {
@@ -136,7 +146,7 @@ public final class SignupBinding implements ViewBinding {
       }
 
       return new SignupBinding((FrameLayout) rootView, btnFinish, etEmail, etMonitoredAddress,
-          etMonitoredNumber, etPassword, etYourNumber, tvGoToLogin, tvTitle);
+          etMonitoredNumber, etName, etPassword, etYourNumber, tvGoToLogin, tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

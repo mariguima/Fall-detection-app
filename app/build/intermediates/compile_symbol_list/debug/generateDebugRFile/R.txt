@@ -54,6 +54,7 @@ int id espConnectFragment 0x0
 int id etEmail 0x0
 int id etMonitoredAddress 0x0
 int id etMonitoredNumber 0x0
+int id etName 0x0
 int id etPassword 0x0
 int id etYourNumber 0x0
 int id helpOnWayFragment 0x0

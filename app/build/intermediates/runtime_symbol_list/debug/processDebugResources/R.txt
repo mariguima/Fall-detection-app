@@ -3994,6 +3994,7 @@ int id espConnectFragment 0x7f0800e3
 int id etEmail 0x7f0800e4
 int id etMonitoredAddress 0x7f0800e5
 int id etMonitoredNumber 0x7f0800e6
+int id etName 0x7f08026e
 int id etPassword 0x7f0800e7
 int id etYourNumber 0x7f0800e8
 int id exitUntilCollapsed 0x7f0800e9
