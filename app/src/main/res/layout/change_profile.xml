@@ -1,7 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_screen">
-</androidx.constraintlayout.widget.ConstraintLayout>
+    android:background="@drawable/bg_screen"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="32dp"
+        android:paddingTop="64dp"
+        android:paddingBottom="48dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textColor="@color/accent_pink"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="name"
+            android:textColorHint="@color/hint_gray"
+            android:textColor="@color/text_dark"
+            android:background="@drawable/rounded_input_bg"
+            android:paddingHorizontal="18dp"
+            android:inputType="textPersonName"
+            android:gravity="center_vertical"
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <EditText
+            android:id="@+id/etYourNumber"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="your number"
+            android:textColorHint="@color/hint_gray"
+            android:textColor="@color/text_dark"
+            android:background="@drawable/rounded_input_bg"
+            android:paddingHorizontal="18dp"
+            android:inputType="phone"
+            android:gravity="center_vertical"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/etName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <EditText
+            android:id="@+id/etMonitoredNumber"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="number of the monitored person"
+            android:textColorHint="@color/hint_gray"
+            android:textColor="@color/text_dark"
+            android:background="@drawable/rounded_input_bg"
+            android:paddingHorizontal="18dp"
+            android:inputType="phone"
+            android:gravity="center_vertical"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/etYourNumber"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <EditText
+            android:id="@+id/etMonitoredAddress"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="address of the monitored person"
+            android:textColorHint="@color/hint_gray"
+            android:textColor="@color/text_dark"
+            android:background="@drawable/rounded_input_bg"
+            android:paddingHorizontal="18dp"
+            android:inputType="textPostalAddress"
+            android:gravity="center_vertical"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/etMonitoredNumber"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="32dp"
+            app:backgroundTint="@color/button_teal"
+            app:cornerRadius="14dp"
+            app:layout_constraintTop_toBottomOf="@id/etMonitoredAddress"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
