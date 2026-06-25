@@ -30,9 +30,6 @@ class AlertFragment : Fragment() {
         // Default state — no fall
         showNoFallState(tvStatus, layoutNoFall, layoutFallDetected, btnViewHistory, btnYes, btnNo)
 
-        btnViewHistory.setOnClickListener {
-            findNavController().navigate(R.id.action_home_to_history)
-        }
 
         // Yes — real fall, go to emergency
         btnYes.setOnClickListener {

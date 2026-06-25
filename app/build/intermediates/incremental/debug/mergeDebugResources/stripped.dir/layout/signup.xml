@@ -82,7 +82,7 @@
                 android:textColorHint="@color/hint_gray"
                 android:textColor="@color/text_dark"
                 android:textSize="15sp"
-                android:inputType="phone"
+                android:inputType="textPersonName"
                 android:paddingHorizontal="18dp"
                 android:paddingVertical="0dp"
                 android:gravity="center_vertical"

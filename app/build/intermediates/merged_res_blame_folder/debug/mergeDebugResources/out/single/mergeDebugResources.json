@@ -48,6 +48,14 @@
         "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-59:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-debug-57:\\layout_change_password.xml.flat",
+        "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-59:\\layout\\change_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-debug-57:\\layout_change_profile.xml.flat",
+        "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-59:\\layout\\change_profile.xml"
+    },
+    {
         "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-debug-57:\\layout_esp_connect.xml.flat",
         "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-59:\\layout\\esp_connect.xml"
     },
@@ -132,6 +140,10 @@
         "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-59:\\layout\\onboarding.xml"
     },
     {
+        "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-debug-57:\\layout_menu.xml.flat",
+        "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-59:\\layout\\menu.xml"
+    },
+    {
         "merged": "com.example.fall_detection_app-debug-57:/layout_signup.xml.flat",
         "source": "com.example.fall_detection_app-main-59:/layout/signup.xml"
     },
@@ -146,6 +158,10 @@
     {
         "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-debug-57:\\layout_fragment_calling.xml.flat",
         "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-59:\\layout\\fragment_calling.xml"
+    },
+    {
+        "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-debug-57:\\drawable_ic_menu.xml.flat",
+        "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-59:\\drawable\\ic_menu.xml"
     },
     {
         "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-debug-57:\\mipmap-mdpi_ic_launcher.webp.flat",

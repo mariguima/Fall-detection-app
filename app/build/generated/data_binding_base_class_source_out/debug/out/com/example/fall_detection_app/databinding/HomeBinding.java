@@ -4,11 +4,14 @@ package com.example.fall_detection_app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.fall_detection_app.R;
@@ -19,46 +22,86 @@ import java.lang.String;
 
 public final class HomeBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final DrawerLayout rootView;
 
   @NonNull
   public final MaterialButton btnLogout;
 
   @NonNull
-  public final MaterialButton btnViewHistory;
+  public final ImageButton btnMenu;
 
   @NonNull
   public final CardView card;
 
   @NonNull
-  public final ConstraintLayout lastFallBox;
+  public final View divider;
 
   @NonNull
-  public final TextView tvLastFallLabel;
+  public final View drawerDivider;
 
   @NonNull
-  public final TextView tvLastFallTime;
+  public final DrawerLayout drawerLayout;
 
   @NonNull
-  public final TextView tvStatus;
+  public final ConstraintLayout navDrawer;
 
-  private HomeBinding(@NonNull ConstraintLayout rootView, @NonNull MaterialButton btnLogout,
-      @NonNull MaterialButton btnViewHistory, @NonNull CardView card,
-      @NonNull ConstraintLayout lastFallBox, @NonNull TextView tvLastFallLabel,
-      @NonNull TextView tvLastFallTime, @NonNull TextView tvStatus) {
+  @NonNull
+  public final RecyclerView rvFallHistory;
+
+  @NonNull
+  public final ConstraintLayout topBar;
+
+  @NonNull
+  public final TextView tvChangePassword;
+
+  @NonNull
+  public final TextView tvChangeProfile;
+
+  @NonNull
+  public final TextView tvConnectDevice;
+
+  @NonNull
+  public final TextView tvFallHistory;
+
+  @NonNull
+  public final TextView tvHello;
+
+  @NonNull
+  public final TextView tvMyProfile;
+
+  @NonNull
+  public final TextView tvTitle;
+
+  private HomeBinding(@NonNull DrawerLayout rootView, @NonNull MaterialButton btnLogout,
+      @NonNull ImageButton btnMenu, @NonNull CardView card, @NonNull View divider,
+      @NonNull View drawerDivider, @NonNull DrawerLayout drawerLayout,
+      @NonNull ConstraintLayout navDrawer, @NonNull RecyclerView rvFallHistory,
+      @NonNull ConstraintLayout topBar, @NonNull TextView tvChangePassword,
+      @NonNull TextView tvChangeProfile, @NonNull TextView tvConnectDevice,
+      @NonNull TextView tvFallHistory, @NonNull TextView tvHello, @NonNull TextView tvMyProfile,
+      @NonNull TextView tvTitle) {
     this.rootView = rootView;
     this.btnLogout = btnLogout;
-    this.btnViewHistory = btnViewHistory;
+    this.btnMenu = btnMenu;
     this.card = card;
-    this.lastFallBox = lastFallBox;
-    this.tvLastFallLabel = tvLastFallLabel;
-    this.tvLastFallTime = tvLastFallTime;
-    this.tvStatus = tvStatus;
+    this.divider = divider;
+    this.drawerDivider = drawerDivider;
+    this.drawerLayout = drawerLayout;
+    this.navDrawer = navDrawer;
+    this.rvFallHistory = rvFallHistory;
+    this.topBar = topBar;
+    this.tvChangePassword = tvChangePassword;
+    this.tvChangeProfile = tvChangeProfile;
+    this.tvConnectDevice = tvConnectDevice;
+    this.tvFallHistory = tvFallHistory;
+    this.tvHello = tvHello;
+    this.tvMyProfile = tvMyProfile;
+    this.tvTitle = tvTitle;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public DrawerLayout getRoot() {
     return rootView;
   }
 
@@ -89,9 +132,9 @@ public final class HomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btnViewHistory;
-      MaterialButton btnViewHistory = ViewBindings.findChildViewById(rootView, id);
-      if (btnViewHistory == null) {
+      id = R.id.btnMenu;
+      ImageButton btnMenu = ViewBindings.findChildViewById(rootView, id);
+      if (btnMenu == null) {
         break missingId;
       }
 
@@ -101,32 +144,83 @@ public final class HomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.lastFallBox;
-      ConstraintLayout lastFallBox = ViewBindings.findChildViewById(rootView, id);
-      if (lastFallBox == null) {
+      id = R.id.divider;
+      View divider = ViewBindings.findChildViewById(rootView, id);
+      if (divider == null) {
         break missingId;
       }
 
-      id = R.id.tvLastFallLabel;
-      TextView tvLastFallLabel = ViewBindings.findChildViewById(rootView, id);
-      if (tvLastFallLabel == null) {
+      id = R.id.drawerDivider;
+      View drawerDivider = ViewBindings.findChildViewById(rootView, id);
+      if (drawerDivider == null) {
         break missingId;
       }
 
-      id = R.id.tvLastFallTime;
-      TextView tvLastFallTime = ViewBindings.findChildViewById(rootView, id);
-      if (tvLastFallTime == null) {
+      DrawerLayout drawerLayout = (DrawerLayout) rootView;
+
+      id = R.id.navDrawer;
+      ConstraintLayout navDrawer = ViewBindings.findChildViewById(rootView, id);
+      if (navDrawer == null) {
         break missingId;
       }
 
-      id = R.id.tvStatus;
-      TextView tvStatus = ViewBindings.findChildViewById(rootView, id);
-      if (tvStatus == null) {
+      id = R.id.rvFallHistory;
+      RecyclerView rvFallHistory = ViewBindings.findChildViewById(rootView, id);
+      if (rvFallHistory == null) {
         break missingId;
       }
 
-      return new HomeBinding((ConstraintLayout) rootView, btnLogout, btnViewHistory, card,
-          lastFallBox, tvLastFallLabel, tvLastFallTime, tvStatus);
+      id = R.id.topBar;
+      ConstraintLayout topBar = ViewBindings.findChildViewById(rootView, id);
+      if (topBar == null) {
+        break missingId;
+      }
+
+      id = R.id.tvChangePassword;
+      TextView tvChangePassword = ViewBindings.findChildViewById(rootView, id);
+      if (tvChangePassword == null) {
+        break missingId;
+      }
+
+      id = R.id.tvChangeProfile;
+      TextView tvChangeProfile = ViewBindings.findChildViewById(rootView, id);
+      if (tvChangeProfile == null) {
+        break missingId;
+      }
+
+      id = R.id.tvConnectDevice;
+      TextView tvConnectDevice = ViewBindings.findChildViewById(rootView, id);
+      if (tvConnectDevice == null) {
+        break missingId;
+      }
+
+      id = R.id.tvFallHistory;
+      TextView tvFallHistory = ViewBindings.findChildViewById(rootView, id);
+      if (tvFallHistory == null) {
+        break missingId;
+      }
+
+      id = R.id.tvHello;
+      TextView tvHello = ViewBindings.findChildViewById(rootView, id);
+      if (tvHello == null) {
+        break missingId;
+      }
+
+      id = R.id.tvMyProfile;
+      TextView tvMyProfile = ViewBindings.findChildViewById(rootView, id);
+      if (tvMyProfile == null) {
+        break missingId;
+      }
+
+      id = R.id.tvTitle;
+      TextView tvTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvTitle == null) {
+        break missingId;
+      }
+
+      return new HomeBinding((DrawerLayout) rootView, btnLogout, btnMenu, card, divider,
+          drawerDivider, drawerLayout, navDrawer, rvFallHistory, topBar, tvChangePassword,
+          tvChangeProfile, tvConnectDevice, tvFallHistory, tvHello, tvMyProfile, tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

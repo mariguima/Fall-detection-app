@@ -93,17 +93,20 @@ app:startDestination="@id/splashFragment" >
         app:enterAnim="@anim/fade_in"
         app:exitAnim="@anim/fade_out" />
     <action
-        android:id="@+id/action_home_to_history"
-        app:destination="@id/historyFragment"
+        android:id="@+id/action_home_to_changeProfile"
+        app:destination="@id/changeProfileFragment"
         app:enterAnim="@anim/fade_in"
         app:exitAnim="@anim/fade_out" />
     <action
-        android:id="@+id/action_home_to_splash"
-        app:destination="@id/splashFragment"
+        android:id="@+id/action_home_to_changePassword"
+        app:destination="@id/changePasswordFragment"
         app:enterAnim="@anim/fade_in"
-        app:exitAnim="@anim/fade_out"
-        app:popUpTo="@id/nav_graph"
-        app:popUpToInclusive="true" />
+        app:exitAnim="@anim/fade_out" />
+    <action
+        android:id="@+id/action_home_to_espConnect"
+        app:destination="@id/espConnectFragment"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out" />
 
 </fragment>
 <fragment
@@ -119,18 +122,6 @@ app:startDestination="@id/splashFragment" >
     <action
         android:id="@+id/action_alert_to_emergency"
         app:destination="@id/emergencyFragment"
-        app:enterAnim="@anim/fade_in"
-        app:exitAnim="@anim/fade_out" />
-
-</fragment>
-<fragment
-    android:id="@+id/historyFragment"
-    android:name="com.example.fall_detection_app.ui.history.HistoryFragment"
-    tools:layout="@layout/fragment_history" >
-
-    <action
-        android:id="@+id/action_history_to_home"
-        app:destination="@id/homeFragment"
         app:enterAnim="@anim/fade_in"
         app:exitAnim="@anim/fade_out" />
 
@@ -159,4 +150,12 @@ app:startDestination="@id/splashFragment" >
         app:exitAnim="@anim/fade_out" />
 
 </fragment>
+<fragment
+    android:id="@+id/changeProfileFragment"
+    android:name="com.example.fall_detection_app.ui.auth.ChangeProfileFragment"
+    tools:layout="@layout/change_profile" />
+<fragment
+    android:id="@+id/changePasswordFragment"
+    android:name="com.example.fall_detection_app.ui.auth.ChangePasswordFragment"
+    tools:layout="@layout/change_password" />
 </navigation>
