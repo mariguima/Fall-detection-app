@@ -3684,6 +3684,7 @@ int drawable ic_other_sign_in 0x7f0700b5
 int drawable ic_passkey 0x7f0700b6
 int drawable ic_password 0x7f0700b7
 int drawable ic_search_black_24 0x7f0700b8
+int drawable ic_shield 0x7f070109
 int drawable login_card_bg 0x7f0700b9
 int drawable m3_avd_hide_password 0x7f0700ba
 int drawable m3_avd_show_password 0x7f0700bb
@@ -3906,6 +3907,7 @@ int id callMeasure 0x7f08008a
 int id cancel_button 0x7f08008b
 int id card 0x7f08008c
 int id cardBluetooth 0x7f08008d
+int id cardFallItem 0x7f080282
 int id cardNotifications 0x7f08008e
 int id carryVelocity 0x7f08008f
 int id center 0x7f080090
@@ -3991,6 +3993,7 @@ int id edit_text_id 0x7f0800da
 int id elastic 0x7f0800db
 int id embed 0x7f0800dc
 int id emergencyFragment 0x7f0800dd
+int id emptyState 0x7f080285
 int id end 0x7f0800de
 int id endToStart 0x7f0800df
 int id enterAlways 0x7f0800e0
@@ -4058,6 +4061,7 @@ int id invisible 0x7f08011e
 int id inward 0x7f08011f
 int id italic 0x7f080120
 int id item_touch_helper_previous_elevation 0x7f080121
+int id ivEmptyIcon 0x7f080286
 int id jumpToEnd 0x7f080122
 int id jumpToStart 0x7f080123
 int id labeled 0x7f080124
@@ -4341,7 +4345,10 @@ int id tvBluetoothTitle 0x7f080237
 int id tvChangePassword 0x7f080238
 int id tvChangeProfile 0x7f080239
 int id tvConnectDevice 0x7f08023a
+int id tvDate 0x7f080283
 int id tvDescription 0x7f08023b
+int id tvEmptySubtitle 0x7f080287
+int id tvEmptyTitle 0x7f080288
 int id tvFallHistory 0x7f08027a
 int id tvFeature1Desc 0x7f08023c
 int id tvFeature1Title 0x7f08023d
@@ -4369,6 +4376,7 @@ int id tvStep4 0x7f080251
 int id tvStep4Number 0x7f080252
 int id tvSubtitle 0x7f080253
 int id tvTime 0x7f080254
+int id tvTimeStatus 0x7f080284
 int id tvTitle 0x7f080255
 int id unchecked 0x7f080256
 int id uniform 0x7f080257
@@ -4545,6 +4553,7 @@ int layout fragment_help_on_way 0x7f0b0032
 int layout home 0x7f0b0034
 int layout ime_base_split_test_activity 0x7f0b0035
 int layout ime_secondary_split_test_activity 0x7f0b0036
+int layout item_fall_history 0x7f0b0080
 int layout login 0x7f0b0037
 int layout m3_alert_dialog 0x7f0b0038
 int layout m3_alert_dialog_actions 0x7f0b0039

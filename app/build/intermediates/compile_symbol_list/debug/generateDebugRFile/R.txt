@@ -17,6 +17,7 @@ int drawable dot_inactive 0x0
 int drawable ic_launcher_background 0x0
 int drawable ic_launcher_foreground 0x0
 int drawable ic_menu 0x0
+int drawable ic_shield 0x0
 int drawable login_card_bg 0x0
 int drawable rounded_gray_bg 0x0
 int drawable rounded_input_bg 0x0
@@ -46,6 +47,7 @@ int id btnViewHistory 0x0
 int id btnYes 0x0
 int id card 0x0
 int id cardBluetooth 0x0
+int id cardFallItem 0x0
 int id cardNotifications 0x0
 int id changePasswordFragment 0x0
 int id changeProfileFragment 0x0
@@ -57,6 +59,7 @@ int id dotsLayout 0x0
 int id drawerDivider 0x0
 int id drawerLayout 0x0
 int id emergencyFragment 0x0
+int id emptyState 0x0
 int id espConnectFragment 0x0
 int id etEmail 0x0
 int id etMonitoredAddress 0x0
@@ -66,6 +69,7 @@ int id etPassword 0x0
 int id etYourNumber 0x0
 int id helpOnWayFragment 0x0
 int id homeFragment 0x0
+int id ivEmptyIcon 0x0
 int id layoutFallDetected 0x0
 int id layoutNoFall 0x0
 int id loginFragment 0x0
@@ -83,7 +87,10 @@ int id tvBluetoothTitle 0x0
 int id tvChangePassword 0x0
 int id tvChangeProfile 0x0
 int id tvConnectDevice 0x0
+int id tvDate 0x0
 int id tvDescription 0x0
+int id tvEmptySubtitle 0x0
+int id tvEmptyTitle 0x0
 int id tvFallHistory 0x0
 int id tvFeature1Desc 0x0
 int id tvFeature1Title 0x0
@@ -111,6 +118,7 @@ int id tvStep4 0x0
 int id tvStep4Number 0x0
 int id tvSubtitle 0x0
 int id tvTime 0x0
+int id tvTimeStatus 0x0
 int id tvTitle 0x0
 int id viewPager 0x0
 int layout activity_main 0x0
@@ -121,6 +129,7 @@ int layout esp_connect 0x0
 int layout fragment_calling 0x0
 int layout fragment_help_on_way 0x0
 int layout home 0x0
+int layout item_fall_history 0x0
 int layout login 0x0
 int layout onboarding 0x0
 int layout signup 0x0

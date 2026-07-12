@@ -96,8 +96,16 @@
         "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-59:\\xml\\data_extraction_rules.xml"
     },
     {
+        "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-debug-57:\\drawable_ic_shield.xml.flat",
+        "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-59:\\drawable\\ic_shield.xml"
+    },
+    {
         "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-debug-57:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-59:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-debug-57:\\layout_item_fall_history.xml.flat",
+        "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-59:\\layout\\item_fall_history.xml"
     },
     {
         "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-debug-57:\\layout_alert.xml.flat",
@@ -144,10 +152,6 @@
         "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-59:\\layout\\menu.xml"
     },
     {
-        "merged": "com.example.fall_detection_app-debug-57:/layout_signup.xml.flat",
-        "source": "com.example.fall_detection_app-main-59:/layout/signup.xml"
-    },
-    {
         "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-debug-57:\\layout_login.xml.flat",
         "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-59:\\layout\\login.xml"
     },
@@ -162,6 +166,10 @@
     {
         "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-debug-57:\\drawable_ic_menu.xml.flat",
         "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-59:\\drawable\\ic_menu.xml"
+    },
+    {
+        "merged": "com.example.fall_detection_app-debug-57:/layout_home.xml.flat",
+        "source": "com.example.fall_detection_app-main-59:/layout/home.xml"
     },
     {
         "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-debug-57:\\mipmap-mdpi_ic_launcher.webp.flat",

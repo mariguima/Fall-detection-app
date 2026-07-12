@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -43,6 +44,12 @@ public final class HomeBinding implements ViewBinding {
   public final DrawerLayout drawerLayout;
 
   @NonNull
+  public final ConstraintLayout emptyState;
+
+  @NonNull
+  public final ImageView ivEmptyIcon;
+
+  @NonNull
   public final ConstraintLayout navDrawer;
 
   @NonNull
@@ -61,6 +68,12 @@ public final class HomeBinding implements ViewBinding {
   public final TextView tvConnectDevice;
 
   @NonNull
+  public final TextView tvEmptySubtitle;
+
+  @NonNull
+  public final TextView tvEmptyTitle;
+
+  @NonNull
   public final TextView tvFallHistory;
 
   @NonNull
@@ -75,9 +88,11 @@ public final class HomeBinding implements ViewBinding {
   private HomeBinding(@NonNull DrawerLayout rootView, @NonNull MaterialButton btnLogout,
       @NonNull ImageButton btnMenu, @NonNull CardView card, @NonNull View divider,
       @NonNull View drawerDivider, @NonNull DrawerLayout drawerLayout,
+      @NonNull ConstraintLayout emptyState, @NonNull ImageView ivEmptyIcon,
       @NonNull ConstraintLayout navDrawer, @NonNull RecyclerView rvFallHistory,
       @NonNull ConstraintLayout topBar, @NonNull TextView tvChangePassword,
       @NonNull TextView tvChangeProfile, @NonNull TextView tvConnectDevice,
+      @NonNull TextView tvEmptySubtitle, @NonNull TextView tvEmptyTitle,
       @NonNull TextView tvFallHistory, @NonNull TextView tvHello, @NonNull TextView tvMyProfile,
       @NonNull TextView tvTitle) {
     this.rootView = rootView;
@@ -87,12 +102,16 @@ public final class HomeBinding implements ViewBinding {
     this.divider = divider;
     this.drawerDivider = drawerDivider;
     this.drawerLayout = drawerLayout;
+    this.emptyState = emptyState;
+    this.ivEmptyIcon = ivEmptyIcon;
     this.navDrawer = navDrawer;
     this.rvFallHistory = rvFallHistory;
     this.topBar = topBar;
     this.tvChangePassword = tvChangePassword;
     this.tvChangeProfile = tvChangeProfile;
     this.tvConnectDevice = tvConnectDevice;
+    this.tvEmptySubtitle = tvEmptySubtitle;
+    this.tvEmptyTitle = tvEmptyTitle;
     this.tvFallHistory = tvFallHistory;
     this.tvHello = tvHello;
     this.tvMyProfile = tvMyProfile;
@@ -158,6 +177,18 @@ public final class HomeBinding implements ViewBinding {
 
       DrawerLayout drawerLayout = (DrawerLayout) rootView;
 
+      id = R.id.emptyState;
+      ConstraintLayout emptyState = ViewBindings.findChildViewById(rootView, id);
+      if (emptyState == null) {
+        break missingId;
+      }
+
+      id = R.id.ivEmptyIcon;
+      ImageView ivEmptyIcon = ViewBindings.findChildViewById(rootView, id);
+      if (ivEmptyIcon == null) {
+        break missingId;
+      }
+
       id = R.id.navDrawer;
       ConstraintLayout navDrawer = ViewBindings.findChildViewById(rootView, id);
       if (navDrawer == null) {
@@ -194,6 +225,18 @@ public final class HomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvEmptySubtitle;
+      TextView tvEmptySubtitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvEmptySubtitle == null) {
+        break missingId;
+      }
+
+      id = R.id.tvEmptyTitle;
+      TextView tvEmptyTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvEmptyTitle == null) {
+        break missingId;
+      }
+
       id = R.id.tvFallHistory;
       TextView tvFallHistory = ViewBindings.findChildViewById(rootView, id);
       if (tvFallHistory == null) {
@@ -219,8 +262,9 @@ public final class HomeBinding implements ViewBinding {
       }
 
       return new HomeBinding((DrawerLayout) rootView, btnLogout, btnMenu, card, divider,
-          drawerDivider, drawerLayout, navDrawer, rvFallHistory, topBar, tvChangePassword,
-          tvChangeProfile, tvConnectDevice, tvFallHistory, tvHello, tvMyProfile, tvTitle);
+          drawerDivider, drawerLayout, emptyState, ivEmptyIcon, navDrawer, rvFallHistory, topBar,
+          tvChangePassword, tvChangeProfile, tvConnectDevice, tvEmptySubtitle, tvEmptyTitle,
+          tvFallHistory, tvHello, tvMyProfile, tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

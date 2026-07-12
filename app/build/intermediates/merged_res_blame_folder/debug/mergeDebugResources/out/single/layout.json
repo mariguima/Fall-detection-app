@@ -20,6 +20,10 @@
         "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-59:\\layout\\home.xml"
     },
     {
+        "merged": "com.example.fall_detection_app-mergeDebugResources-56:/layout/home.xml",
+        "source": "com.example.fall_detection_app-main-59:/layout/home.xml"
+    },
+    {
         "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-mergeDebugResources-56:\\layout\\onboarding.xml",
         "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-59:\\layout\\onboarding.xml"
     },
@@ -44,8 +48,8 @@
         "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-59:\\layout\\splash.xml"
     },
     {
-        "merged": "com.example.fall_detection_app-mergeDebugResources-56:/layout/signup.xml",
-        "source": "com.example.fall_detection_app-main-59:/layout/signup.xml"
+        "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-mergeDebugResources-56:\\layout\\item_fall_history.xml",
+        "source": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-main-59:\\layout\\item_fall_history.xml"
     },
     {
         "merged": "C:\\Users\\maria\\.gradle\\daemon\\9.1.0\\com.example.fall_detection_app-mergeDebugResources-56:\\layout\\change_profile.xml",

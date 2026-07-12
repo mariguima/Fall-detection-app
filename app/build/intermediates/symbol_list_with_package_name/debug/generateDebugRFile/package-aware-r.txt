@@ -18,6 +18,7 @@ drawable dot_inactive
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_menu
+drawable ic_shield
 drawable login_card_bg
 drawable rounded_gray_bg
 drawable rounded_input_bg
@@ -47,6 +48,7 @@ id btnViewHistory
 id btnYes
 id card
 id cardBluetooth
+id cardFallItem
 id cardNotifications
 id changePasswordFragment
 id changeProfileFragment
@@ -58,6 +60,7 @@ id dotsLayout
 id drawerDivider
 id drawerLayout
 id emergencyFragment
+id emptyState
 id espConnectFragment
 id etEmail
 id etMonitoredAddress
@@ -67,6 +70,7 @@ id etPassword
 id etYourNumber
 id helpOnWayFragment
 id homeFragment
+id ivEmptyIcon
 id layoutFallDetected
 id layoutNoFall
 id loginFragment
@@ -84,7 +88,10 @@ id tvBluetoothTitle
 id tvChangePassword
 id tvChangeProfile
 id tvConnectDevice
+id tvDate
 id tvDescription
+id tvEmptySubtitle
+id tvEmptyTitle
 id tvFallHistory
 id tvFeature1Desc
 id tvFeature1Title
@@ -112,6 +119,7 @@ id tvStep4
 id tvStep4Number
 id tvSubtitle
 id tvTime
+id tvTimeStatus
 id tvTitle
 id viewPager
 layout activity_main
@@ -122,6 +130,7 @@ layout esp_connect
 layout fragment_calling
 layout fragment_help_on_way
 layout home
+layout item_fall_history
 layout login
 layout onboarding
 layout signup
