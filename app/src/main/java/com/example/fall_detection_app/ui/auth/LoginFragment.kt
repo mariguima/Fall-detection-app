@@ -14,6 +14,7 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.fall_detection_app.R
+import com.example.fall_detection_app.notifications.PushTokenManager
 import com.google.android.material.button.MaterialButton
 import com.google.firebase.auth.FirebaseAuth
 
@@ -35,6 +36,7 @@ class LoginFragment : Fragment() {
         val etPassword = view.findViewById<EditText>(R.id.etPassword)
         val btnGetStarted = view.findViewById<MaterialButton>(R.id.btnGetStarted)
         val tvGoToSignUp = view.findViewById<TextView>(R.id.tvGoToSignUp)
+        val tvChangePassword = view.findViewById<TextView>(R.id.tvChangePassword)
 
 
         val fullText = "Just Arrived? Sign up"
@@ -52,6 +54,10 @@ class LoginFragment : Fragment() {
             findNavController().navigate(R.id.action_loginFragment_to_signUpFragment)
         }
 
+        tvChangePassword.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_changePasswordFragment)
+        }
+
         btnGetStarted.setOnClickListener {
             val email = etEmail.text.toString().trim()
             val password = etPassword.text.toString()
@@ -63,8 +69,9 @@ class LoginFragment : Fragment() {
 
             auth.signInWithEmailAndPassword(email, password)
                 .addOnSuccessListener {
+                    PushTokenManager.syncCurrentUserToken()
                     // Login worked — go to home screen
-                    findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
+                    findNavController().navigate(R.id.action_loginFragment_to_espConnectFragment)
                 }
                 .addOnFailureListener { e ->
                     btnGetStarted.isEnabled = true

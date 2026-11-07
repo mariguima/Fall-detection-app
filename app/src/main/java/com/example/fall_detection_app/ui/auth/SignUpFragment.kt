@@ -14,6 +14,7 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.fall_detection_app.R
+import com.example.fall_detection_app.notifications.PushTokenManager
 import com.google.android.material.button.MaterialButton
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -80,12 +81,14 @@ class SignUpFragment : Fragment() {
                     val db = FirebaseFirestore.getInstance()
                     db.collection("users").document(userId)
                         .set(mapOf(
+                            "email" to email,
                             "name" to name,
                             "yourNumber" to yourNumber,
                             "monitoredNumber" to monitoredNumber,
                             "monitoredAddress" to monitoredAddress
                         ))
                         .addOnSuccessListener {
+                            PushTokenManager.syncCurrentUserToken()
                             findNavController().navigate(R.id.action_signUpFragment_to_espConnectFragment)
                         }
                         .addOnFailureListener { e ->

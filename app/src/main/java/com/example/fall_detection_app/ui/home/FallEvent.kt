@@ -8,5 +8,8 @@ data class FallEvent(
     val userId: String = "",
     val espTimestamp: Timestamp? = null,
     val serverTimestamp: Timestamp? = null,
-    val status: String = ""
+    val status: String = "",
+    val source: String = "",
+    val frameSequence: Long? = null,
+    val fallScore: Double? = null
 )

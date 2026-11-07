@@ -3,6 +3,7 @@ package com.example.fall_detection_app
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
+import com.example.fall_detection_app.notifications.PushTokenManager
 import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
@@ -18,6 +19,8 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment)
 
         if (auth.currentUser != null) {
+            PushTokenManager.syncCurrentUserToken()
+
             // user is logged in — go to home skipping onboarding
             if (navController.currentDestination?.id == R.id.splashFragment) {
                 navController.navigate(

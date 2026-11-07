@@ -22,7 +22,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="28dp"
-            app:cardCornerRadius="20dp"
+            app:cardCornerRadius="12dp"
             app:cardBackgroundColor="@color/card_cream"
             app:cardElevation="4dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -115,6 +115,19 @@
                     android:textSize="14sp"
                     android:gravity="center"
                     app:layout_constraintTop_toBottomOf="@id/btnGetStarted"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tvChangePassword"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Forgot password?"
+                    android:textColor="@color/text_dark"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    app:layout_constraintTop_toBottomOf="@id/tvGoToSignUp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"/>
 
